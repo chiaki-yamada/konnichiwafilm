@@ -1,0 +1,169 @@
+/* home page */
+
+.home-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.header img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.title {
+  font-family: 'Italiana', serif;
+  font-size: 1.9rem;
+  color: #D3FFC3;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub-title {
+  font-family: 'Jomolhari', serif;
+  font-size: 0.85rem;
+  width: 100%;
+  text-align: center;
+  color: #D3FFC3;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jump-to-film {
+  font-family: 'Jomolhari', serif;
+  font-size: 1rem;
+  position: absolute;
+  color: #D3FFC3;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #D3FFC3;
+  border-radius: 50px;
+  padding: 10px 20px; 
+  background-color: transparent;
+  z-index: 2;
+
+}
+.jump-to-film:hover {
+  background-color: #D3FFC3;
+  color: black;
+  transition: 0.5s;
+}
+
+
+/* film page */
+.wrapper {
+  padding: 5rem 2rem;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+  
+
+/* media queries */
+@media (min-width:375px){
+  #previous-button, #next-button {
+      display: none;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  #previous-button, #next-button {
+    display: block;
+}
+  /* home page */
+  .header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .sub-title {
+    font-size: 0.9rem;
+    top: 60%;
+    left: 50%;
+  }
+
+  .jump-to-film {
+    font-size: 1.25rem;
+  }
+  /* film page */
+  .wrapper {
+    padding: 8rem 4rem;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px 20px; 
+  }
+ 
+  
+}
+@media screen and (min-width: 1024px) {
+  
+  /* home page */
+  .header {    
+    top: 8%;  
+  }
+  .header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .title {
+    font-size: 5.25rem;
+    top: 45%;
+    left: 50%;
+
+  }
+  .sub-title {
+    top: 80%;
+    
+
+  }
+  .jump-to-film {
+    top: 90%;
+    left: 50%;
+    
+  }
+  /* film page */
+  .wrapper {
+    padding: 10rem 6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* home page */
+  .title {
+    font-size: 6.75rem;
+
+  }
+  .sub-title {
+    left: 50%;
+  }
+
+  /* film page */
+  .wrapper {
+    padding: 12rem 8rem;
+  }
+}
+  
